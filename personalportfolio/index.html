@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--comments-->
+  </head>
+
+  <script src="script.js"></script>
+
+  <!--NAVIGATION BAR-->
+  <body>
+    <div id="home">
+      <header id="header">
+        <a href="#home"><img class="logo" src="img/logo.png" alt="logo" /></a>
+
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <img onclick="themeSwitch()" src="img/sun.png" id="theme-icon" />
+      </header>
+
+      <script src="script.js"></script>
+      <!--HERO SECTION-->
+
+      <main>
+        <section class="info">
+          <img class="pfp" src="img/profilepic.png" alt="profile picture" />
+
+          <div class="intro">
+            <div class="description">
+              <p class="hi">Hi, my name is</p>
+              <h1 class="name">Adithya Gundlapalli.</h1>
+              <p>
+                I am an aspiring student studying Computer Science<br />at the
+                University of California: Santa Cruz. I have a<br />focus in
+                front-end development. I love programming <br />
+                and solving problems! <br />
+              </p>
+            </div>
+            <div class="icons">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/adithyagundlapalli"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/adithya01/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/adithya.gundlapalli/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/adithyag01"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!--ABOUT ME SECTION-->
+    <div id="about">
+      <div class="information">
+        <div class="center-align">
+          <h1 class="heading">About Me</h1>
+          <p class="desc">
+            Hello, I'm Adithya Gundlapalli, a Computer Science BS major at the
+            University of California, Santa Cruz. From my freshman year in high
+            school, I have immersed myself in the world of programming,
+            cultivating a deep passion for problem-solving through code.
+            Proficient in an array of programming languages and frameworks,
+            including Python, HTML, CSS, JavaScript, and Angular, I bring a
+            versatile skill set to the table. Currently interning at Intern
+            Protege as a web developer, I am gaining valuable hands-on
+            experience and further honing my abilities in the ever-evolving
+            field of computer science.
+          </p>
+
+          <div class="tabs">
+            <p class="t active-link" onclick="opentab('skills')">Skills</p>
+            <p class="t" onclick="opentab('experience')">Experience</p>
+            <p class="t" onclick="opentab('education')">Education</p>
+          </div>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <p>Programming Languages:</p>
+          <ul class="skills-content">
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <p>Experience</p>
+          <ul class="skills-content">
+            <li>Web Development Intern @ Intern Protege</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <p>Education</p>
+          <ul class="skills-content">
+            <li>Mountain House High School</li>
+            <li>University of California: Santa Cruz</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--PORTFOLIO SECTION-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Portfolio</h1>
+        <div class="project-list">
+          <div class="project">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/adithyagundlapalli/simplecalculator.git"
+              ><img
+                class="proj-img"
+                src="img/calculator.jpeg"
+                alt="calculator project"
+            /></a>
+            <div class="proj">
+              <h1 class="proj-title">Simple Calculator with GUI</h1>
+              <p class="proj-description">
+                I recently created a beginner-friendly calculator with a
+                graphical user interface using Python's Tkinter. This project
+                marked my introduction to Tkinter, allowing me to explore the
+                basics of GUI development while crafting a simple and visually
+                appealing tool for basic arithmetic operations. The clean design
+                and intuitive interface make it a great starting point for my
+                journey into more complex Tkinter projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/adithyagundlapalli/personalportfolio.git"
+              ><img
+                class="proj-img"
+                src="img/website.png"
+                alt="personal portfolio website"
+            /></a>
+
+            <div class="proj">
+              <h1 class="proj-title">Personal Portfolio Website</h1>
+              <p class="proj-description">
+                I delved into front-end and web development by creating a
+                personal portfolio website using HTML, CSS, and JavaScript. This
+                project not only demonstrates my proficiency in these
+                technologies but also serves as a dynamic self-marketing tool,
+                showcasing my projects and skills to potential opportunities.
+                The website is more than a resume; it's a visually engaging
+                representation of my journey and capabilities in the evolving
+                field of front-end development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="contact-left">
+            <div class="gmail">
+              <p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:adithya.3035@gmail.com"
+                  class="gmail-icon"
+                  ><i class="bx bxs-paper-plane"></i></a
+                >adithya.3035@gmail.com
+              </p>
+            </div>
+
+            <div class="social-icons">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/adithyagundlapalli"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/adithya01/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/adithya.gundlapalli/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/adithyag01"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </div>
+            <a href="" class="btn">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="your message"
+                required
+              ></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Designed & Developed by Adithya Gundlapalli 🤟🏾 2024</p>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx_fl4xEzcfDv_1MqE9njS48R8qwqSYg9awlDBzvcKkFUjhg_Y3oilHyodQB-SzNSgVkQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) }).then(
+          (response) => {
+            msg.innerHTML = "message sent!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+          }
+        );
+        form.reset().catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
