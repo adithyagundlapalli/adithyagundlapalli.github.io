@@ -1,2 +1,2 @@
 Adithya's User Page
-This is my updated user page for CSE 110.
+My favorite programming language is Python.
