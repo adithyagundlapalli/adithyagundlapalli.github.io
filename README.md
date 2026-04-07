@@ -1,3 +1,3 @@
-Hi, I'm Adithya.
-I'm a Math-CS student at UC San Diego.
-This is my personal website for CSE 110.
+Adithya's User Page
+My favorite programming language is Python.
+Site: https://adithyagundlapalli.github.io/
